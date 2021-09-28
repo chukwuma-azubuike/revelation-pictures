@@ -1,10 +1,15 @@
 import LandingPage from "./pages/LandingPage/LandingPage";
 import './index.css';
+import TopNav from "./components/TopNav/TopNav";
+import SideNav from "./components/SideNav/SideNav";
+
 function App() {
 
   return (
     <div>
-      <LandingPage />
+      <TopNav />
+      <SideNav />
+      {/* <LandingPage /> */}
     </div>
   );
 }

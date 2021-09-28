@@ -7,13 +7,14 @@ module.exports = {
         black: '#000000',
         white: '#FFFFFF',
         accent: {
-          '100': '#e6c96',
-          '400': '#e6cb76'
+          '100': '#ffdac0',
+          '200': '#ff6b00',
+          '300': '#ff3c01'
         },
         // pink: colors.fuchsia,
       },
       fontFamily: {
-        sans: ['avenir', 'sans-serif'],
+        sans: ['Helvetica', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
       spacing: {
@@ -28,6 +29,13 @@ module.exports = {
       },
       gridTemplateRows: {
         'landing': 'auto auto 100px'
+      },
+      screens: {
+        'phone': '280px',
+        'tablet': '577px'
+      },
+      transitionProperty: {
+        'smooth': '0.3s ease all'
       }
     },
     variants: {
