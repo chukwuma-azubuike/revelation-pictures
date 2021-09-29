@@ -1,7 +1,7 @@
-import LandingPage from "./pages/LandingPage/LandingPage";
 import './index.css';
 import TopNav from "./components/TopNav/TopNav";
 import SideNav from "./components/SideNav/SideNav";
+import Home from './pages/Home/Home';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <div className='font-sans' >
       <TopNav />
       <SideNav />
-      {/* <LandingPage /> */}
+      <Home />
     </div>
   );
 }

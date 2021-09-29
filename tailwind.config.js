@@ -43,6 +43,10 @@ module.exports = {
       },
       transitionProperty: {
         'smooth': '0.3s ease all'
+      },
+      backgroundImage: {
+        'home-bg': "url('/src/assets/Media/dark-landscape.jpg')",
+        'home-blur': "blur(24px)"
       }
     },
     variants: {
