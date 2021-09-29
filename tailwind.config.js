@@ -32,7 +32,14 @@ module.exports = {
       },
       screens: {
         'phone': '280px',
-        'tablet': '577px'
+        'tablet': '577px',
+        'phonemax': { 'max': '280px' },
+        'tabletmax': { 'max': '577px' },
+        '2xlmax': { 'max': '1535px' },
+        'xlmax': { 'max': '1279px' },
+        'lgmax': { 'max': '1023px' },
+        'mdmax': { 'max': '767px' },
+        'smmax': { 'max': '639px' }
       },
       transitionProperty: {
         'smooth': '0.3s ease all'

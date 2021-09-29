@@ -6,9 +6,9 @@ export default function useOpenClose() {
 
     const openCloseFunc = (id) => {
         setOpen(!open)
-        if (open) {
+        if (!open) {
             document.getElementById(id).style.right = '0';
-        } else if (!open) {
+        } else if (open) {
             document.getElementById(id).style.right = '576px';
         }
     }

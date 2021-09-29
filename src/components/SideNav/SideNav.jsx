@@ -1,5 +1,3 @@
-import OpenClose from "../OpenClose/OpenClose";
-
 export default function SideNav() {
     return (
         <nav id='side-nav' className='py-0 px-12 bg-black text-white h-screen absolute right-144 tablet:hidden w-full transition-all duration-300' >

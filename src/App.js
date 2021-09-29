@@ -6,7 +6,7 @@ import SideNav from "./components/SideNav/SideNav";
 function App() {
 
   return (
-    <div>
+    <div className='font-sans' >
       <TopNav />
       <SideNav />
       {/* <LandingPage /> */}

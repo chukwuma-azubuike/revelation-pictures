@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export default function OpenClose(props) {
 
@@ -8,10 +8,6 @@ export default function OpenClose(props) {
         setTransform(!transform)
         props.onClick()
     }
-
-    useEffect(() => {
-        // transform
-    }, transform)
 
     return (
         <div className={props.className} >
