@@ -3,9 +3,11 @@ const { useState } = require("react")
 export default function useCarousel() {
 
     const [currentSlide, setCurrentSlide] = useState(1)
+    const [slideState, setSlideState] = useState(true)
 
     const slideFunc = (group) => {
-        if (!group) return false
+        
+        if (!group) return
         let slide = document.getElementsByClassName(group)
         if (currentSlide <= slide.length) {
             setTimeout(() => {
@@ -13,9 +15,9 @@ export default function useCarousel() {
                     slide[i].style.display = 'none'
                 }
                 setCurrentSlide(currentSlide + 1)
-                console.log('current', currentSlide)
+                // console.log('current', currentSlide)
                 document.getElementById(currentSlide).style.display = 'block'
-            }, 3000)
+            }, 2000)
         } else {
             setTimeout(() => {
                 setCurrentSlide(1)
@@ -25,6 +27,8 @@ export default function useCarousel() {
 
     return {
         currentSlide,
+        slideState,
+        setSlideState,
         slideFunc
     }
 }

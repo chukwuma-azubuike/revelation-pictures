@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import dadposter from '../../assets/Media/dadPoster.jpg'
 import dadPoster2 from '../../assets/Media/dadPoster2.jpg'
 import dadTrailer from '../../assets/Media/dadTrailer.mp4'
@@ -6,10 +6,7 @@ import useCarousel from '../../hooks/Carosel'
 
 export default function Home() {
 
-    const { currentSlide, slideFunc } = useCarousel()
-    const [slideState, setSlideState] = useState(true)
-
-    console.log(currentSlide)
+    const { setSlideState, slideFunc, slideState } = useCarousel()
 
     useEffect(() => {
         slideState && slideFunc('slides')
@@ -17,6 +14,7 @@ export default function Home() {
 
     const handleClick = () => {
         setSlideState(!slideState)
+        slideFunc(!slideState)
     }
 
     return (
