@@ -8,7 +8,11 @@ export default function useOpenClose() {
         setOpen(!open)
         if (!open) {
             document.getElementById(id).style.right = '0';
+            setTimeout(() => {
+                document.getElementById(id).style.position = 'sticky';
+            }, 300)
         } else if (open) {
+            document.getElementById(id).style.position = 'absolute';
             document.getElementById(id).style.right = '576px';
         }
     }
