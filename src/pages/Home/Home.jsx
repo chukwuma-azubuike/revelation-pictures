@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <div>
             {/* <div className='absolute top-0 bg-black w-full h-screen bg-home-bg bg-no-repeat bg-cover filter blur-md' /> */}
-            <div className='w-full top-36 flex text-center justify-center hv1/2 bg-black' >
+            <div className='w-full top-36 flex text-center justify-center bg-black' >
                 <div id={1} className='slides relative hidden' onClick={handleClick}>
                     <img className='m-auto h-144 shadow-2xl sm:h-144 sm:w-96 phonemax:w-72  phonemax:h-128' src={dadposter} />
                 </div>

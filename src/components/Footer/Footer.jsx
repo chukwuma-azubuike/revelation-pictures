@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <nav className='bg-black text-white md:px-9 lg:px-28 xl:px-52 box-border'>
+        <nav className='bg-black text-white md:px-9 lg:px-28 xl:px-52 box-border relative top-full w-full'>
             {/* lg:text-8xl md:4xl sm:2xl lg:py-6 lg:px-52*/}
             <div className='text-6xl relative flex bottom-0 box-border font-black pt-16 pb-8 xl:text-8xl'>
                 <ul className='justify-between w-full md:flex'>

@@ -10,18 +10,16 @@ import {
   Link
 } from "react-router-dom";
 import About from './pages/About/About';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 function App() {
 
   return (
-    <div className='font-sans grid' >
+    <div className='font-sans grid bg-black h-full' >
       <TopNav />
       <SideNav />
       <Router>
         <Switch>
-          <Route path='/' >
-            <Home />
-          </Route>
           <Route path='/projects' >
             <Home />
           </Route>
@@ -29,9 +27,12 @@ function App() {
             <Home />
           </Route>
           <Route path='/about' >
-            <About/>
+            <About />
           </Route>
           <Route path='/contact' >
+            <ContactUs />
+          </Route>
+          <Route path='/' >
             <Home />
           </Route>
         </Switch>
