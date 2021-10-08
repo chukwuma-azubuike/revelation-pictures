@@ -19,12 +19,12 @@ export default function ContactUs() {
                         <p>We would love to hear from you!</p>
                     </div> */}
                     <div className='md:border-r border-b md:border-b-0 border-accent-300 py-3 pr-6 mt-3 md:mt-0'>
-                        <a><p>TEL: +234 803 722 3516</p></a>
-                        <a><p>EMAIL: revelationpictures001@yahoo.com</p></a>
+                        <p>TEL: <a className='hover:text-accent-300' href='tel:+2348037223516' >+234 803 722 3516</a></p>
+                        <p>EMAIL: <a className='hover:text-accent-300' href='mailto:revelationpictures001@yahoo.com'>revelationpictures001@yahoo.com</a></p>
                     </div>
                 </div>
                 <div>
-                    <form className='text-sm' onSubmit={handleSubmit} >
+                    <form className='text-sm' onSubmit={handleSubmit}>
                         <div className='grid md:flex md:justify-between my-8 space-y-4' >
                             <input className='p-2 border-b border-white md:w-5/12 bg-black text-white placeholder-gray-400' placeholder='Name' type='text' />
                             <input className='p-2 border-b border-white md:w-5/12 bg-black text-white placeholder-gray-400' placeholder='Email' type='email' />

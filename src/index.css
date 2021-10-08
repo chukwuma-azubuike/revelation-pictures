@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
   background: black;
   margin: 0;
@@ -14,10 +13,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.hv12{
+.hv12 {
   height: 80vh;
 }
 
-input, textarea{
+input, textarea {
   outline: none !important;
+}
+
+.creative {
+  box-shadow: 0 -2px #ff3c01 inset;
+  padding-bottom: 6px;
 }

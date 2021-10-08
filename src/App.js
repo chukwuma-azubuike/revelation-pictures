@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import About from './pages/About/About';
 import ContactUs from './pages/ContactUs/ContactUs';
+import Talent from './pages/Talent/Talent';
+import Projects from './pages/Projects/Projects';
 
 function App() {
 
@@ -21,10 +23,10 @@ function App() {
       <Router>
         <Switch>
           <Route path='/projects' >
-            <Home />
+            <Projects />
           </Route>
           <Route path='/talent' >
-            <Home />
+            <Talent />
           </Route>
           <Route path='/about' >
             <About />
