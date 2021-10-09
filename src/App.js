@@ -18,9 +18,9 @@ function App() {
 
   return (
     <div className='font-sans grid bg-black h-full' >
-      <TopNav />
-      <SideNav />
       <Router>
+        <TopNav />
+        <SideNav />
         <Switch>
           <Route path='/projects' >
             <Projects />
@@ -38,8 +38,8 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

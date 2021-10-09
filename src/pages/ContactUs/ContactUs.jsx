@@ -1,8 +1,15 @@
+import topFunction from "../../hooks/scrollToTop"
+import { useEffect } from "react" 
+
 export default function ContactUs() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
     }
+
+    useEffect(() => {
+        topFunction()
+    }, [])
 
     return (
         <div className='text-white px-8 sm:px-28 lg:px-56 py-8' >

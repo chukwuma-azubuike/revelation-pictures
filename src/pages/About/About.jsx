@@ -1,6 +1,12 @@
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { useEffect } from 'react';
+import topFunction from '../../hooks/scrollToTop';
 
 export default function About() {
+
+    useEffect(() => {
+        topFunction()
+    }, [])
     return (
         <div className='text-white px-8 sm:px-28 lg:px-56 py-8' >
             <header className='text-8xl line-through line ' >03</header>

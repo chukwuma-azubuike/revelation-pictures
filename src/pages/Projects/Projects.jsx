@@ -1,7 +1,14 @@
 import dadPoster from '../../assets/Media/dadPoster.jpg'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import topFunction from '../../hooks/scrollToTop';
+import { useEffect } from 'react';
 
 export default function Projects() {
+
+    useEffect(() => {
+        topFunction()
+    }, [])
+
     return (
         <div className='text-white px-8 sm:px-28 lg:px-56 py-8' >
             <header className='text-8xl line-through line' >01</header>

@@ -1,6 +1,7 @@
 import logo from '../../assets/logo-white.jpg';
 import OpenClose from '../OpenClose/OpenClose';
 import useOpenClose from '../../hooks/OpenClose.hook';
+import { Link } from 'react-router-dom';
 
 export default function TopNav() {
 
@@ -16,11 +17,21 @@ export default function TopNav() {
             <OpenClose onClick={handleOpenClose} className='phone:block sm:hidden tablet:hidden absolute right-16 top-7 z-20' />
             <div className='phone:hidden tablet:block' >
                 <ul className='flex space-x-4 sm:text-xl lg:text-2xl lg:space-x-10 font-thin' >
-                    <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Home</li>
-                    <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Our Projects</li>
-                    <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Talent</li>
-                    <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >About Us</li>
-                    <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Contact Us</li>
+                    <Link to='/' >
+                        <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Home</li>
+                    </Link>
+                    <Link to='/projects' >
+                        <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Our Projects</li>
+                    </Link>
+                    <Link to='/talent' >
+                        <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Talent</li>
+                    </Link>
+                    <Link to='/about' >
+                        <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >About Us</li>
+                    </Link>
+                    <Link to='/contact' >
+                        <li className='cursor-pointer hover:text-accent-300 transition-colors duration-300' >Contact Us</li>
+                    </Link>
                 </ul>
             </div>
         </nav>

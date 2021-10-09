@@ -3,6 +3,7 @@ import dadposter from '../../assets/Media/dadPoster.jpg'
 import dadPoster2 from '../../assets/Media/dadPoster2.jpg'
 import dadTrailer from '../../assets/Media/dadTrailer.mp4'
 import useCarousel from '../../hooks/Carosel'
+import topFunction from '../../hooks/scrollToTop'
 
 export default function Home() {
 
@@ -16,6 +17,10 @@ export default function Home() {
         setSlideState(!slideState)
         // slideFunc(!slideState)
     }
+
+    useEffect(() => {
+        topFunction()
+    }, [])
 
     return (
         <div>
