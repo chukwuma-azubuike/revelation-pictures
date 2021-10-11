@@ -1,5 +1,7 @@
 import topFunction from "../../hooks/scrollToTop"
-import { useEffect } from "react" 
+import { useEffect } from "react"
+import LineThroughAnime from '../../components/LineThroughAnime';
+
 
 export default function ContactUs() {
 
@@ -13,8 +15,10 @@ export default function ContactUs() {
 
     return (
         <div className='text-white px-8 sm:px-28 lg:px-56 py-8' >
-            <header className='text-8xl line-through line ' >03</header>
-            <div className='py-16' >
+            <header className='text-8xl relative' >
+                <span className='ml-16' >04</span>
+                <LineThroughAnime />
+            </header>            <div className='py-16' >
                 <h1 className='text-5xl' >Contact <span className='text-accent-300' >Revelation Pictures</span>.</h1>
             </div>
             <div className='font-light text-gray-400 text-md'>
@@ -22,9 +26,6 @@ export default function ContactUs() {
                     <div className='md:border-r md:border-b-0 border-b border-accent-300 py-3 pr-6 mr-6' >
                         <p>We would love to hear from you!</p>
                     </div>
-                    {/* <div className='border-r border-accent-300 py-3 pr-3 mr-3'>
-                        <p>We would love to hear from you!</p>
-                    </div> */}
                     <div className='md:border-r border-b md:border-b-0 border-accent-300 py-3 pr-6 mt-3 md:mt-0'>
                         <p>TEL: <a className='hover:text-accent-300' href='tel:+2348037223516' >+234 803 722 3516</a></p>
                         <p>EMAIL: <a className='hover:text-accent-300' href='mailto:revelationpictures001@yahoo.com'>revelationpictures001@yahoo.com</a></p>
@@ -44,8 +45,6 @@ export default function ContactUs() {
                         </div>
                     </form>
                 </div>
-                {/* <p className='text-sm mt-12 mb-4 text-white' >VIEW OUR CREATIVE TALENT</p>
-                <ArrowRightAltIcon className='text-accent-300 hover:text-white transition-colors duration-300' /> */}
             </div>
         </div>
     )

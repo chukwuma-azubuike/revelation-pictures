@@ -6,7 +6,7 @@ export default function useCarousel() {
     const [slideState, setSlideState] = useState(true)
 
     const slideFunc = (group) => {
-        
+
         if (!group) return
         let slide = document.getElementsByClassName(group)
         if (currentSlide <= slide.length) {
@@ -16,7 +16,8 @@ export default function useCarousel() {
                 }
                 setCurrentSlide(currentSlide + 1)
                 // console.log('current', currentSlide)
-                document.getElementById(currentSlide).style.display = 'block'
+                if (document.getElementById(currentSlide))
+                    document.getElementById(currentSlide).style.display = 'block'
             }, 2000)
         } else {
             setTimeout(() => {
