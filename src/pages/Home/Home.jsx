@@ -32,6 +32,10 @@ export default function Home() {
 
     return (
         <div>
+            <div className='py-12 px-3 text-5xl text-white md:m-auto md:w-max lg:mx-64' >
+                <h1>This is</h1>
+                <h1><span className='text-accent-300' >Revelation Pictures</span>.</h1>
+            </div>
             <div className='top-36 flex text-center justify-center bg-black w-full md:w-96 lg:w-5/12 xl:w-4/12 2xl:w-3/12 m-auto' >
                 <Carousel
                     autoPlay={true}

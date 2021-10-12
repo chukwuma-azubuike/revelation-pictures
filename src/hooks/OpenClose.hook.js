@@ -8,8 +8,14 @@ export default function useOpenClose() {
         // openCloseFunc('side-nav')
     }, [open])
 
-    const openCloseFunc = (id) => {
+    const openCloseFunc = (id, bool) => {
+        // alert(bool)
         setOpen(!open)
+        if (bool === false) {
+            document.getElementById(id).style.position = 'absolute';
+            document.getElementById(id).style.right = '576px';
+            return
+        }
         if (!open) {
             document.getElementById(id).style.right = '0';
             setTimeout(() => {

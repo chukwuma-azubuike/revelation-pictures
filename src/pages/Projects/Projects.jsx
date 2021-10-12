@@ -36,11 +36,12 @@ export default function Projects() {
                 <header className='text-8xl relative' >
                     <span className='ml-16' >01</span>
                     <LineThroughAnime />
-                </header>            <div className='py-16' >
+                </header>
+                <div className='py-16' >
                     <h1 className='text-5xl' ><span className='text-accent-300' >Our Projects</span>.</h1>
                 </div>
                 <div className='font-light text-gray-400'>
-                    <img src={dadPoster} alt='Happy Fathers day' className='w-2/3 m-auto lg:w-2/5' />
+                    <img onClick={handleClick} src={dadPoster} alt='Happy Fathers day' className='w-2/3 m-auto lg:w-2/5 cursor-pointer' />
                     <p className='text-sm mt-12 mb-4 text-white flex items-center font-thin' >
                         <span onClick={handleClick} className='hover:text-accent-300 cursor-pointer text-white transition-colors duration-300'>
                             VIEW

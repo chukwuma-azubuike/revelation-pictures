@@ -33,7 +33,7 @@ export default function Footer() {
                 </ul>
             </div>
             <p className='text-xs font-thin ml-8 mb-6 text-gray-400' >
-                Revelation Pictures © {new Date().getFullYear()}. Proudly created by
+                Revelation Pictures © {new Date().getFullYear()}. Built by Chukwuma Azubuike
             </p>
         </nav>
     )

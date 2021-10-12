@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom"
-import useOpenClose from "../../hooks/OpenClose.hook"
 
 export default function SideNav() {
 
-    const { openCloseFunc, setOpen } = useOpenClose()
-
     const handleClick = () => {
-        // setOpen(true)
-        openCloseFunc('side-nav')
+        document.getElementById('open-close').click()
     }
     return (
         <nav id='side-nav' className='py-0 px-12 bg-black text-white h-screen absolute top-24 right-144 tablet:hidden w-screen transition-all duration-300 z-10' >
