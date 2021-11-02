@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/revelation-pictures/static/css/main.beb40a7f.chunk.css",
-    "main.js": "/revelation-pictures/static/js/main.2a63cc13.chunk.js",
-    "main.js.map": "/revelation-pictures/static/js/main.2a63cc13.chunk.js.map",
+    "main.js": "/revelation-pictures/static/js/main.50a61312.chunk.js",
+    "main.js.map": "/revelation-pictures/static/js/main.50a61312.chunk.js.map",
     "runtime-main.js": "/revelation-pictures/static/js/runtime-main.8e4e93d5.js",
     "runtime-main.js.map": "/revelation-pictures/static/js/runtime-main.8e4e93d5.js.map",
     "static/css/2.f30b721a.chunk.css": "/revelation-pictures/static/css/2.f30b721a.chunk.css",
@@ -12,7 +12,8 @@
     "static/css/2.f30b721a.chunk.css.map": "/revelation-pictures/static/css/2.f30b721a.chunk.css.map",
     "static/css/main.beb40a7f.chunk.css.map": "/revelation-pictures/static/css/main.beb40a7f.chunk.css.map",
     "static/js/2.df5402dd.chunk.js.LICENSE.txt": "/revelation-pictures/static/js/2.df5402dd.chunk.js.LICENSE.txt",
-    "static/media/bukolaOgunsola.423308f5.jpg": "/revelation-pictures/static/media/bukolaOgunsola.423308f5.jpg",
+    "static/media/bukolaOgunsola.92689217.jpg": "/revelation-pictures/static/media/bukolaOgunsola.92689217.jpg",
+    "static/media/bukolaOgunsolaTiny.e7ef4405.jpg": "/revelation-pictures/static/media/bukolaOgunsolaTiny.e7ef4405.jpg",
     "static/media/dadPoster.91bb365c.jpg": "/revelation-pictures/static/media/dadPoster.91bb365c.jpg",
     "static/media/dadPoster2.cc9a23a2.jpg": "/revelation-pictures/static/media/dadPoster2.cc9a23a2.jpg",
     "static/media/dadPoster2Tiny.5f08f76d.jpg": "/revelation-pictures/static/media/dadPoster2Tiny.5f08f76d.jpg",
@@ -26,6 +27,6 @@
     "static/css/2.f30b721a.chunk.css",
     "static/js/2.df5402dd.chunk.js",
     "static/css/main.beb40a7f.chunk.css",
-    "static/js/main.2a63cc13.chunk.js"
+    "static/js/main.50a61312.chunk.js"
   ]
 }
