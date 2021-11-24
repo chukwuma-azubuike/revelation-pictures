@@ -6,7 +6,8 @@ import Footer from './components/Footer/Footer';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 import About from './pages/About/About';
 import ContactUs from './pages/ContactUs/ContactUs';
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <div className='font-sans grid bg-black h-full' >
-      <Router>
+      {/* <Router> */}
+      <HashRouter>
         <TopNav />
         <SideNav />
         <Switch>
@@ -38,7 +40,8 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
+      {/* </Router> */}
     </div>
   );
 }
