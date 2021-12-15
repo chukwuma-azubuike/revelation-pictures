@@ -33,7 +33,7 @@ export default function Footer() {
                 </ul>
             </div>
             <p className='text-xs font-thin ml-8 mb-6 text-gray-400' >
-                Revelation Pictures © {new Date().getFullYear()}. Built by<a href='' className='text-accent-300'> DevMax</a>
+                Revelation Pictures © {new Date().getFullYear()}. Built by<a href='https://chukwuma-azubuike.github.io/personal-website/' target='_blank' className='text-accent-300'> DevMax</a>
             </p>
         </nav>
     )
